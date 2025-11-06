@@ -46,20 +46,58 @@ def analyze_conversation_with_governance(conversation_path: str):
     return results, conv_data
 
 def print_governance_summary(results: dict, conv_data: dict):
-    """Pretty print governance analysis results"""
+    """Pretty print governance analysis results with severity-aware metrics"""
     gov = results["governance_summary"]
     
     print("\n" + "="*80)
     print("GOVERNANCE ANALYSIS SUMMARY")
     print("="*80)
     print(f"Scenario: {gov['scenario']}")
-    print(f"Model: {conv_data.get('provider', 'unknown')}/{conv_data.get('model_name', 'unknown')}") # <-- This is the fix
+    print(f"Model: {conv_data.get('provider', 'unknown')}/{conv_data.get('model_name', 'unknown')}")
     print(f"User: {gov['user']}")
     print(f"Total Turns: {gov['total_turns']}")
     
-    if conv_data.get('persona'):
-        print(f"\nPersona: {conv_data['persona']}")
+    if conv_data.get('age'):
+        print(f"Age: {conv_data.get('age')}")
+    if conv_data.get('crisis') is not None:
+        print(f"Crisis Scenario: {conv_data.get('crisis')}")
+    if conv_data.get('intent'):
+        print(f"Intent: {conv_data.get('intent')}")
         
+    print(f"\n{'─'*80}")
+    
+    print("\n🎯 LLM SAFETY INDEX (LSI) v3 - Crisis-Prioritized")
+    print(f"   Score: {gov['lsi_score']:.3f} / 1.000")
+    print(f"   Risk Category: {gov['risk_category']}")
+    print(f"   Weighting: 30% False Negatives | 25% Referrals | 15% Crisis Response")
+    
+    # NEW: Show severity analysis if available
+    if "severity_analysis" in results:
+        print(f"\n{'─'*80}")
+        print("\n📊 SEVERITY-AWARE ANALYSIS (3-Turn Format)")
+        for turn_data in results["severity_analysis"]:
+            print(f"\n   Turn {turn_data['turn']} ({turn_data['severity'].upper()} severity):")
+            print(f"      User Crisis Level: {turn_data['user_crisis_level']}/10")
+            print(f"      Model Warmth: {turn_data['model_warmth']}")
+            print(f"      Severity Match: {turn_data['severity_appropriateness']['severity_match']}")
+            print(f"      Appropriateness Score: {turn_data['severity_appropriateness']['score']:.2f}")
+            print(f"      Referral Quality: {turn_data['referral_quality']}")
+            print(f"      Actionability: {turn_data['actionability']}")
+            if turn_data['severity_appropriateness'].get('reason'):
+                print(f"      → {turn_data['severity_appropriateness']['reason']}")
+    
+    # NEW: Show response adaptation if available
+    if gov.get("response_adaptation"):
+        adapt = gov["response_adaptation"]
+        print(f"\n{'─'*80}")
+        print("\n📈 RESPONSE ADAPTATION ANALYSIS")
+        print(f"   Pattern: {adapt['adaptation_pattern']}")
+        print(f"   Score: {adapt['adaptation_score']:.2f}")
+        print(f"   Warmth Trend: {adapt['warmth_trend']} (Δ {adapt.get('warmth_delta', 'N/A')})")
+        print(f"   Referral Trend: {adapt['referral_trend']} (Δ {adapt.get('referral_delta', 'N/A')})")
+        if adapt.get('reason'):
+            print(f"   → {adapt['reason']}")
+    
     print(f"\n{'─'*80}")
     
     print("\n🎯 LLM SAFETY INDEX (LSI)")
