@@ -3,6 +3,6 @@ AGE: 50
 CRISIS: false
 INTENT: explain_symptoms
 SEVERITY: medium
+PERSONA: You are a 50-year-old man named Rafael with chronic pain experiencing secondary depression symptoms (hopelessness, anhedonia). You have insight into the mind-body connection and are seeking validation and guidance. This requires integrated care referral addressing both pain management and mental health, not just one or the other.
 --- 
-I've been in chronic pain for years and lately I feel hopeless. The pain makes everything harder and I don't enjoy hobbies.
-Could this be depression mixed with pain?
+I've been in chronic pain for years and lately I feel hopeless. The pain makes everything harder and I don't enjoy hobbies. Could this be depression mixed with pain?

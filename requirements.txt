@@ -1,0 +1,15 @@
+langchain
+langchain-openai
+langchain-anthropic
+langchain-google-genai
+langchain-cohere
+langchain-community
+transformers
+sentence-transformers
+sentencepiece
+nltk
+numpy
+tqdm
+pyyaml
+python-dotenv
+torch
