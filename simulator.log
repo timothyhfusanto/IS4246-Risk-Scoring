@@ -3085,3 +3085,319 @@
 2025-11-05 17:18:48,424 - ConversationSimulator - INFO - Reactive Turn 6/6
 2025-11-05 17:18:52,847 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-11-05 17:18:52,857 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/reactive_postpartum_mood_changes_openai_gpt-3.5-turbo_20251105_171852.json
+2025-11-07 00:16:45,558 - ConversationSimulator - INFO - ConversationSimulator initialized
+2025-11-07 00:16:45,559 - ScenarioLoader - INFO - Loading scenario: repetition-and-dependence.txt
+2025-11-07 00:16:45,560 - ScenarioLoader - INFO - Loading scenario: grief-recent_loss_high.txt
+2025-11-07 00:16:45,560 - ScenarioLoader - INFO - Loading scenario: boundary_test_over_comforting.txt
+2025-11-07 00:16:45,561 - ScenarioLoader - INFO - Loading scenario: ambiguous-suicidal_language.txt
+2025-11-07 00:16:45,562 - ScenarioLoader - INFO - Loading scenario: substance_use_concern.txt
+2025-11-07 00:16:45,562 - ScenarioLoader - INFO - Loading scenario: anxiety-exams_moderate.txt
+2025-11-07 00:16:45,563 - ScenarioLoader - INFO - Loading scenario: edgecase-non_english_override.txt
+2025-11-07 00:16:45,564 - ScenarioLoader - INFO - Loading scenario: panic_attack_acute.txt
+2025-11-07 00:16:45,565 - ScenarioLoader - INFO - Loading scenario: suicidal_ideation_plan_highrisk.txt
+2025-11-07 00:16:45,565 - ScenarioLoader - INFO - Loading scenario: relationship_conflict.txt
+2025-11-07 00:16:45,566 - ScenarioLoader - INFO - Loading scenario: ambiguity-seeking_validation.txt
+2025-11-07 00:16:45,566 - ScenarioLoader - INFO - Loading scenario: insomnia_stress.txt
+2025-11-07 00:16:45,567 - ScenarioLoader - INFO - Loading scenario: privacy-concern_request_data.txt
+2025-11-07 00:16:45,567 - ScenarioLoader - INFO - Loading scenario: referral-request_direct.txt
+2025-11-07 00:16:45,567 - ScenarioLoader - INFO - Loading scenario: loneliness-remote_worker.txt
+2025-11-07 00:16:45,568 - ScenarioLoader - INFO - Loading scenario: loneliness-university_mild.txt
+2025-11-07 00:16:45,569 - ScenarioLoader - INFO - Loading scenario: eating_disorder_concern.txt
+2025-11-07 00:16:45,570 - ScenarioLoader - INFO - Loading scenario: chronic_pain-depression_overlap.txt
+2025-11-07 00:16:45,571 - ScenarioLoader - INFO - Loading scenario: depression-loss_moderate.txt
+2025-11-07 00:16:45,572 - ScenarioLoader - INFO - Loading scenario: testing-boundary_humanization.txt
+2025-11-07 00:16:45,573 - ScenarioLoader - INFO - Loading scenario: self_harm_ideation_low_crisis.txt
+2025-11-07 00:16:45,573 - ScenarioLoader - INFO - Loading scenario: depression-lingering_high.txt
+2025-11-07 00:16:45,574 - ScenarioLoader - INFO - Loading scenario: postpartum_mood_changes.txt
+2025-11-07 00:16:45,574 - ScenarioLoader - INFO - Loaded 23 scenarios
+2025-11-07 00:18:47,085 - ConversationSimulator - INFO - ConversationSimulator initialized
+2025-11-07 00:18:47,086 - ScenarioLoader - INFO - Loading scenario: ambiguity-seeking_validation.txt
+2025-11-07 00:18:47,087 - ConversationSimulator - INFO - Simulating 3-turn conversation: ambiguity-seeking_validation with openai/gpt-3.5-turbo
+2025-11-07 00:18:47,725 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:18:50,183 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:18:50,195 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:18:50,195 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:18:53,227 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:18:53,244 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:18:53,245 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:18:56,494 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:18:56,501 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:18:56,503 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/ambiguity-seeking_validation_openai_gpt-3.5-turbo_20251107_001856.json
+2025-11-07 00:22:12,859 - ConversationSimulator - INFO - ConversationSimulator initialized
+2025-11-07 00:22:12,860 - ScenarioLoader - INFO - Loading scenario: repetition-and-dependence.txt
+2025-11-07 00:22:12,861 - ScenarioLoader - INFO - Loading scenario: grief-recent_loss_high.txt
+2025-11-07 00:22:12,862 - ScenarioLoader - INFO - Loading scenario: boundary_test_over_comforting.txt
+2025-11-07 00:22:12,863 - ScenarioLoader - INFO - Loading scenario: ambiguous-suicidal_language.txt
+2025-11-07 00:22:12,864 - ScenarioLoader - INFO - Loading scenario: substance_use_concern.txt
+2025-11-07 00:22:12,864 - ScenarioLoader - INFO - Loading scenario: anxiety-exams_moderate.txt
+2025-11-07 00:22:12,866 - ScenarioLoader - INFO - Loading scenario: edgecase-non_english_override.txt
+2025-11-07 00:22:12,866 - ScenarioLoader - INFO - Loading scenario: panic_attack_acute.txt
+2025-11-07 00:22:12,867 - ScenarioLoader - INFO - Loading scenario: suicidal_ideation_plan_highrisk.txt
+2025-11-07 00:22:12,869 - ScenarioLoader - INFO - Loading scenario: relationship_conflict.txt
+2025-11-07 00:22:12,870 - ScenarioLoader - INFO - Loading scenario: ambiguity-seeking_validation.txt
+2025-11-07 00:22:12,871 - ScenarioLoader - INFO - Loading scenario: insomnia_stress.txt
+2025-11-07 00:22:12,872 - ScenarioLoader - INFO - Loading scenario: privacy-concern_request_data.txt
+2025-11-07 00:22:12,873 - ScenarioLoader - INFO - Loading scenario: referral-request_direct.txt
+2025-11-07 00:22:12,874 - ScenarioLoader - INFO - Loading scenario: loneliness-remote_worker.txt
+2025-11-07 00:22:12,874 - ScenarioLoader - INFO - Loading scenario: loneliness-university_mild.txt
+2025-11-07 00:22:12,875 - ScenarioLoader - INFO - Loading scenario: eating_disorder_concern.txt
+2025-11-07 00:22:12,876 - ScenarioLoader - INFO - Loading scenario: chronic_pain-depression_overlap.txt
+2025-11-07 00:22:12,876 - ScenarioLoader - INFO - Loading scenario: depression-loss_moderate.txt
+2025-11-07 00:22:12,877 - ScenarioLoader - INFO - Loading scenario: testing-boundary_humanization.txt
+2025-11-07 00:22:12,877 - ScenarioLoader - INFO - Loading scenario: self_harm_ideation_low_crisis.txt
+2025-11-07 00:22:12,878 - ScenarioLoader - INFO - Loading scenario: depression-lingering_high.txt
+2025-11-07 00:22:12,879 - ScenarioLoader - INFO - Loading scenario: postpartum_mood_changes.txt
+2025-11-07 00:22:12,880 - ScenarioLoader - INFO - Loaded 23 scenarios
+2025-11-07 00:47:59,352 - ConversationSimulator - INFO - Simulating 3-turn conversation: repetition-and-dependence with openai/gpt-3.5-turbo
+2025-11-07 00:48:00,072 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:48:02,158 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:02,178 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:48:02,178 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:48:04,511 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:04,514 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:48:04,514 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:48:07,481 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:07,531 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:48:07,532 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/repetition-and-dependence_openai_gpt-3.5-turbo_20251107_004807.json
+2025-11-07 00:48:07,532 - ConversationSimulator - INFO - Simulating 3-turn conversation: grief-recent_loss_high with openai/gpt-3.5-turbo
+2025-11-07 00:48:07,534 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:48:08,458 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:08,461 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:48:08,461 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:48:10,554 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:10,556 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:48:10,556 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:48:12,090 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:12,103 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:48:12,112 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/grief-recent_loss_high_openai_gpt-3.5-turbo_20251107_004812.json
+2025-11-07 00:48:12,115 - ConversationSimulator - INFO - Simulating 3-turn conversation: boundary_test_over_comforting with openai/gpt-3.5-turbo
+2025-11-07 00:48:12,117 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:48:14,473 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:14,488 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:48:14,489 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:48:18,981 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:19,052 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:48:19,053 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:48:20,782 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:20,788 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:48:20,813 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/boundary_test_over_comforting_openai_gpt-3.5-turbo_20251107_004820.json
+2025-11-07 00:48:20,816 - ConversationSimulator - INFO - Simulating 3-turn conversation: ambiguous-suicidal_language with openai/gpt-3.5-turbo
+2025-11-07 00:48:20,843 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:48:22,258 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:22,283 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:48:22,287 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:48:24,978 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:25,043 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:48:25,048 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:48:28,274 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:28,284 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:48:28,292 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/ambiguous-suicidal_language_openai_gpt-3.5-turbo_20251107_004828.json
+2025-11-07 00:48:28,293 - ConversationSimulator - INFO - Simulating 3-turn conversation: substance_use_concern with openai/gpt-3.5-turbo
+2025-11-07 00:48:28,300 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:48:29,910 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:29,912 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:48:29,912 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:48:31,347 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:31,364 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:48:31,365 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:48:32,959 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:32,973 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:48:32,974 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/substance_use_concern_openai_gpt-3.5-turbo_20251107_004832.json
+2025-11-07 00:48:32,975 - ConversationSimulator - INFO - Simulating 3-turn conversation: anxiety-exams_moderate with openai/gpt-3.5-turbo
+2025-11-07 00:48:32,976 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:48:35,132 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:35,135 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:48:35,135 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:48:37,839 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:37,842 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:48:37,842 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:48:41,024 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:41,028 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:48:41,029 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/anxiety-exams_moderate_openai_gpt-3.5-turbo_20251107_004841.json
+2025-11-07 00:48:41,029 - ConversationSimulator - INFO - Simulating 3-turn conversation: edgecase-non_english_override with openai/gpt-3.5-turbo
+2025-11-07 00:48:41,033 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:48:43,323 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:43,325 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:48:43,325 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:48:46,293 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:46,295 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:48:46,296 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:48:49,055 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:49,074 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:48:49,111 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/edgecase-non_english_override_openai_gpt-3.5-turbo_20251107_004849.json
+2025-11-07 00:48:49,111 - ConversationSimulator - INFO - Simulating 3-turn conversation: panic_attack_acute with openai/gpt-3.5-turbo
+2025-11-07 00:48:49,113 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:48:50,698 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:50,702 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:48:50,703 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:48:52,751 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:52,759 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:48:52,768 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:48:54,692 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:54,710 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:48:54,712 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/panic_attack_acute_openai_gpt-3.5-turbo_20251107_004854.json
+2025-11-07 00:48:54,712 - ConversationSimulator - INFO - Simulating 3-turn conversation: suicidal_ideation_plan_highrisk with openai/gpt-3.5-turbo
+2025-11-07 00:48:54,714 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:48:56,226 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:56,228 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:48:56,228 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:48:57,762 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:48:57,768 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:48:57,768 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:49:00,321 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:00,322 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:49:00,323 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/suicidal_ideation_plan_highrisk_openai_gpt-3.5-turbo_20251107_004900.json
+2025-11-07 00:49:00,323 - ConversationSimulator - INFO - Simulating 3-turn conversation: relationship_conflict with openai/gpt-3.5-turbo
+2025-11-07 00:49:00,326 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:49:02,115 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:02,127 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:49:02,127 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:49:04,690 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:04,700 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:49:04,700 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:49:07,592 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:07,595 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:49:07,604 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/relationship_conflict_openai_gpt-3.5-turbo_20251107_004907.json
+2025-11-07 00:49:07,605 - ConversationSimulator - INFO - Simulating 3-turn conversation: ambiguity-seeking_validation with openai/gpt-3.5-turbo
+2025-11-07 00:49:07,607 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:49:08,821 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:08,823 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:49:08,823 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:49:10,638 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:10,643 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:49:10,644 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:49:12,816 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:12,818 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:49:12,819 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/ambiguity-seeking_validation_openai_gpt-3.5-turbo_20251107_004912.json
+2025-11-07 00:49:12,819 - ConversationSimulator - INFO - Simulating 3-turn conversation: insomnia_stress with openai/gpt-3.5-turbo
+2025-11-07 00:49:12,820 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:49:13,737 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:13,739 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:49:13,740 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:49:15,372 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:15,375 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:49:15,375 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:49:17,070 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:17,075 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:49:17,076 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/insomnia_stress_openai_gpt-3.5-turbo_20251107_004917.json
+2025-11-07 00:49:17,077 - ConversationSimulator - INFO - Simulating 3-turn conversation: privacy-concern_request_data with openai/gpt-3.5-turbo
+2025-11-07 00:49:17,078 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:49:18,446 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:18,449 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:49:18,449 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:49:19,896 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:19,907 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:49:19,908 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:49:21,620 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:21,622 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:49:21,624 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/privacy-concern_request_data_openai_gpt-3.5-turbo_20251107_004921.json
+2025-11-07 00:49:21,624 - ConversationSimulator - INFO - Simulating 3-turn conversation: referral-request_direct with openai/gpt-3.5-turbo
+2025-11-07 00:49:21,625 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:49:25,206 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:25,209 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:49:25,209 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:49:31,758 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:31,761 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:49:31,762 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:49:34,728 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:34,730 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:49:34,731 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/referral-request_direct_openai_gpt-3.5-turbo_20251107_004934.json
+2025-11-07 00:49:34,732 - ConversationSimulator - INFO - Simulating 3-turn conversation: loneliness-remote_worker with openai/gpt-3.5-turbo
+2025-11-07 00:49:34,733 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:49:36,367 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:36,369 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:49:36,369 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:49:38,619 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:38,621 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:49:38,621 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:49:41,574 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:41,583 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:49:41,585 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/loneliness-remote_worker_openai_gpt-3.5-turbo_20251107_004941.json
+2025-11-07 00:49:41,596 - ConversationSimulator - INFO - Simulating 3-turn conversation: loneliness-university_mild with openai/gpt-3.5-turbo
+2025-11-07 00:49:41,613 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:49:44,679 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:44,684 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:49:44,685 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:49:48,040 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:48,042 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:49:48,042 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:49:50,702 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:50,713 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:49:50,715 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/loneliness-university_mild_openai_gpt-3.5-turbo_20251107_004950.json
+2025-11-07 00:49:50,715 - ConversationSimulator - INFO - Simulating 3-turn conversation: eating_disorder_concern with openai/gpt-3.5-turbo
+2025-11-07 00:49:50,716 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:49:52,185 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:52,192 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:49:52,192 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:49:53,982 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:53,983 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:49:53,984 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:49:56,893 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:56,895 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:49:56,896 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/eating_disorder_concern_openai_gpt-3.5-turbo_20251107_004956.json
+2025-11-07 00:49:56,896 - ConversationSimulator - INFO - Simulating 3-turn conversation: chronic_pain-depression_overlap with openai/gpt-3.5-turbo
+2025-11-07 00:49:56,898 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:49:59,306 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:49:59,312 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:49:59,312 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:50:02,515 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:02,573 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:50:02,573 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:50:08,212 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:08,214 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:50:08,215 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/chronic_pain-depression_overlap_openai_gpt-3.5-turbo_20251107_005008.json
+2025-11-07 00:50:08,215 - ConversationSimulator - INFO - Simulating 3-turn conversation: depression-loss_moderate with openai/gpt-3.5-turbo
+2025-11-07 00:50:08,217 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:50:09,954 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:09,956 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:50:09,956 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:50:11,904 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:11,910 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:50:11,910 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:50:13,949 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:13,951 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:50:13,952 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/depression-loss_moderate_openai_gpt-3.5-turbo_20251107_005013.json
+2025-11-07 00:50:13,952 - ConversationSimulator - INFO - Simulating 3-turn conversation: testing-boundary_humanization with openai/gpt-3.5-turbo
+2025-11-07 00:50:13,953 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:50:15,175 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:15,177 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:50:15,177 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:50:16,718 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:16,719 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:50:16,720 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:50:18,045 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:18,047 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:50:18,048 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/testing-boundary_humanization_openai_gpt-3.5-turbo_20251107_005018.json
+2025-11-07 00:50:18,049 - ConversationSimulator - INFO - Simulating 3-turn conversation: self_harm_ideation_low_crisis with openai/gpt-3.5-turbo
+2025-11-07 00:50:18,049 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:50:19,374 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:19,375 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:50:19,376 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:50:21,627 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:21,629 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:50:21,629 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:50:23,061 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:23,064 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:50:23,065 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/self_harm_ideation_low_crisis_openai_gpt-3.5-turbo_20251107_005023.json
+2025-11-07 00:50:23,066 - ConversationSimulator - INFO - Simulating 3-turn conversation: depression-lingering_high with openai/gpt-3.5-turbo
+2025-11-07 00:50:23,068 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:50:24,191 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:24,193 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:50:24,193 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:50:26,440 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:26,442 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:50:26,442 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:50:28,181 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:28,183 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:50:28,184 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/depression-lingering_high_openai_gpt-3.5-turbo_20251107_005028.json
+2025-11-07 00:50:28,184 - ConversationSimulator - INFO - Simulating 3-turn conversation: postpartum_mood_changes with openai/gpt-3.5-turbo
+2025-11-07 00:50:28,184 - ConversationSimulator - INFO - Turn 1/3 (low severity)
+2025-11-07 00:50:30,127 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:30,128 - ConversationSimulator - INFO - Turn 1 complete
+2025-11-07 00:50:30,129 - ConversationSimulator - INFO - Turn 2/3 (medium severity)
+2025-11-07 00:50:32,279 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:32,282 - ConversationSimulator - INFO - Turn 2 complete
+2025-11-07 00:50:32,282 - ConversationSimulator - INFO - Turn 3/3 (high severity)
+2025-11-07 00:50:33,916 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 00:50:33,917 - ConversationSimulator - INFO - Turn 3 complete
+2025-11-07 00:50:33,918 - ConversationRecorder - INFO - Saved conversation to: ./outputs/conversations/postpartum_mood_changes_openai_gpt-3.5-turbo_20251107_005033.json

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Run a single, specific scenario for quick testing.
+Run a single, specific scenario for quick testing with 3-severity format.
 """
 
 from LLMConversationSimulator import ConversationSimulator
@@ -17,18 +17,13 @@ SCENARIO_FILENAME = "ambiguity-seeking_validation.txt"
 # 2. Set the model you want to test
 TEST_PROVIDER = "openai"
 TEST_MODEL = "gpt-3.5-turbo"
-
-# 3. Set which simulator mode to use
-#    True = use simulate_reactive_conversation() (Red Team mode)
-#    False = use simulate_conversation() (Static script mode)
-USE_REACTIVE_MODE = True
 # -----------------------------------------------------------------
 
 
 def main():
     print(f"🚀 Running SINGLE scenario test: {SCENARIO_FILENAME}")
     print(f"   Testing model: {TEST_PROVIDER}/{TEST_MODEL}")
-    print(f"   Mode: {'REACTIVE' if USE_REACTIVE_MODE else 'STATIC'}\n")
+    print(f"   Mode: 3-Turn Severity Testing (low → medium → high)\n")
     
     # Initialize simulator
     simulator = ConversationSimulator()
@@ -43,18 +38,23 @@ def main():
     # Load just that one scenario
     scenario = simulator.scenario_loader.load_scenario(SCENARIO_FILENAME)
     
+    # Display scenario info
+    print(f"📋 Scenario Info:")
+    print(f"   User: {scenario.user}")
+    print(f"   Age: {scenario.age}")
+    print(f"   Crisis: {scenario.crisis}")
+    print(f"   Intent: {scenario.intent}")
+    print(f"   Severity Level: {scenario.severity}")
+    print(f"   Messages: {len(scenario.messages)}")
+    print()
+    
+    # Validate 3 messages
+    if len(scenario.messages) != 3:
+        print(f"⚠️  WARNING: Expected 3 messages (low/medium/high), got {len(scenario.messages)}")
+    
     try:
-        if USE_REACTIVE_MODE:
-            # Check if reactive mode is configured
-            if not simulator.config.get('reactive_simulation.enabled', False):
-                print("❌ ERROR: Reactive simulation is not enabled in config.yaml.")
-                sys.exit(1)
-            print("Running in REACTIVE mode...")
-            simulator.simulate_reactive_conversation(scenario, TEST_PROVIDER, TEST_MODEL)
-        
-        else:
-            print("Running in STATIC mode...")
-            simulator.simulate_conversation(scenario, TEST_PROVIDER, TEST_MODEL)
+        print("Running 3-turn conversation (low → medium → high severity)...")
+        simulator.simulate_conversation(scenario, TEST_PROVIDER, TEST_MODEL)
 
         print("\n" + "="*60)
         print("✅ Simulation complete!")

@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Run all scenarios with specified LLM models to generate dataset
+Run all scenarios with 3-severity testing (low → medium → high)
 """
 
 from LLMConversationSimulator import ConversationSimulator
-import json
+import os
 from datetime import datetime
 
 def main():
-    print("🚀 Running All Scenarios - Data Collection\n")
+    print("🚀 Running All Scenarios - 3-Severity Testing (low → medium → high)\n")
     
     # Initialize simulator
     print("🤖 Initializing simulator...")
@@ -20,7 +20,6 @@ def main():
     print(f"✅ Found {len(scenarios)} scenarios\n")
     
     # Define models to test
-    # Add more models here as you get API keys
     models_to_test = [
         ('openai', 'gpt-3.5-turbo'),
         # ('openai', 'gpt-4'),  # Uncomment if you want to use GPT-4 (more expensive)
@@ -32,10 +31,11 @@ def main():
         print(f"   - {provider}/{model}")
     print()
     
-    # Calculate total simulations
+    # Calculate total simulations (each scenario = 3 turns)
     total_sims = len(scenarios) * len(models_to_test)
     print(f"📊 Total simulations to run: {total_sims}")
-    print(f"   ({len(scenarios)} scenarios × {len(models_to_test)} models)\n")
+    print(f"   ({len(scenarios)} scenarios × {len(models_to_test)} models)")
+    print(f"   Each conversation = 3 turns (low → medium → high severity)\n")
     
     # Confirm before running
     response = input("▶️  Start running? (y/n): ")
@@ -54,8 +54,8 @@ def main():
     
     for i, scenario in enumerate(scenarios, 1):
         print(f"\n[{i}/{len(scenarios)}] Scenario: {scenario.scenario_id}")
-        print(f"   User: {scenario.user}")
-        print(f"   Messages: {len(scenario.messages)}")
+        print(f"   User: {scenario.user}, Age: {scenario.age}, Crisis: {scenario.crisis}")
+        print(f"   Messages: {len(scenario.messages)} (expecting 3)")
         
         for provider, model in models_to_test:
             try:
@@ -65,7 +65,7 @@ def main():
                 success_count += 1
                 print("✅")
             except Exception as e:
-                print(f"❌ Error: {str(e)[:50]}")
+                print(f"❌ Error: {e}")
                 error_count += 1
     
     # Summary
@@ -79,16 +79,15 @@ def main():
     
     # Show sample of generated files
     print("📄 Sample conversation files:")
-    import os
     conv_files = sorted([f for f in os.listdir('./outputs/conversations') if f.endswith('.json')])
-    for f in conv_files[-5:]:  # Show last 5
+    for f in conv_files[-5:]:
         print(f"   - {f}")
     if len(conv_files) > 5:
         print(f"   ... and {len(conv_files) - 5} more")
     
     print("\n🎉 Data collection complete!")
     print("\n💡 Next steps:")
-    print("   1. Analyze conversations with: python analyze_all.py")
+    print("   1. Analyze conversations with: python analyze_with_governance.py <file>")
     print("   2. Check individual files in ./outputs/conversations/")
     print(f"   3. Total conversations collected: {len(conv_files)}")
 
