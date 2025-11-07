@@ -28,7 +28,6 @@ ENV/
 
 # API Keys and Secrets (IMPORTANT!)
 .env
-config.yaml
 *.key
 secrets.yaml
 
