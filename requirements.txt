@@ -5,7 +5,7 @@ langchain-google-genai
 langchain-cohere
 langchain-community
 transformers
-sentence-transformers
+sentence-transformers==5.1.2
 sentencepiece
 nltk
 numpy

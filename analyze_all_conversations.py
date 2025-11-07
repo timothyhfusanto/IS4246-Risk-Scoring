@@ -75,14 +75,14 @@ def main():
         return
     
     # Find all conversation files (exclude analysis files)
-    conv_dir = Path("outputs/analysis")
+    conv_dir = Path("outputs/conversations")
     conv_files = sorted([
         f for f in conv_dir.glob("*.json") 
         if not f.name.endswith("_governance_analysis.json")
     ])
     
     if not conv_files:
-        print("❌ No conversation files found in outputs/analysis/")
+        print("❌ No conversation files found in outputs/conversations/")
         return
     
     print(f"✅ Found {len(conv_files)} conversation files to analyze\n")
@@ -140,7 +140,7 @@ def main():
     
     print("\n✅ Batch analysis complete!")
     print("\n💡 Next steps:")
-    print("   1. Review individual analysis files in outputs/analysis/")
+    print("   1. Review individual analysis files in outputs/conversations/")
     print("   2. Compare models by LSI scores")
     print("   3. Investigate conversations with high false negative counts")
 
