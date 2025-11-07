@@ -53,7 +53,7 @@ OPENAI_API_KEY="your-openai-api-key"
 
 Notes:
 - `.env` is already in `.gitignore` — do not commit secrets.
-- Replace the `${API_KEY}` with your desired model. For example replace  `${OPENAI_API_KEY}` in `config.yaml` using your real api key from Open AI
+- In `config.yaml` replace the `${API_KEY}` with your desired model. For example replace  `${OPENAI_API_KEY}` in `config.yaml` using your real api key from Open AI
 - You are able to play around with the configuration and even using another model to test the analysis by modifying the `config.yaml`
 
 ## First Run (Generate → Analyze)
