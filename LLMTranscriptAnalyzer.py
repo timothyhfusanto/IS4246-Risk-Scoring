@@ -9,13 +9,8 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 from sentence_transformers import SentenceTransformer, util
 
-# ========================================
-# CONFIGURATION: LLM-Based Analysis
-# ========================================
-# This system uses LLM-based metrics for accurate, context-aware evaluation
-LLM_ANALYSIS_MODEL = "gpt-4o-mini"  # Fast and cheap; use "gpt-4o" for higher accuracy
+LLM_ANALYSIS_MODEL = "gpt-4o-mini"
 
-# Initialize LLM analyzer (required)
 llm_analyzer = None
 try:
     from LLMMetricsAnalyzer import LLMMetricsAnalyzer
