@@ -31,7 +31,7 @@ cd IS4246-Risk-Scoring
 2) Create a virtual environment and install dependencies
 
 ```bash
-python -m venv venv
+python3.12 -m venv venv
 source venv/bin/activate  # macOS/Linux
 # venv\Scripts\activate   # Windows (PowerShell)
 

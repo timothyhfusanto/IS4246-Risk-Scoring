@@ -47,7 +47,6 @@ logs/
 
 # Output files
 outputs/
-*.json
 
 # Model files (can be large)
 models/

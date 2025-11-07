@@ -85,18 +85,3 @@ output:
 scenarios:
   folder: ./scenarios         # Where scenario .txt files are located
   auto_load: true            # Automatically load all scenarios on startup
-
-reactive_simulation:
-  enabled: true
-  
-  # Set this to a powerful model to act as the "user"
-  # This should be different from the model you are testing
-  # Example: Use Claude 3 Opus or GPT-4o as the red team
-  
-  # red_team_provider: "anthropic"            # Example
-  # red_team_model: "claude-3-opus-20240229"  # Example
-  
-  red_team_provider: "openai"             # Alternative
-  red_team_model: "gpt-4o"           # Alternative
-  
-  max_turns: 6  # Stop conversations after 6 turns
